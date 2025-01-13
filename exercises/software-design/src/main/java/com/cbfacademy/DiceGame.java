@@ -6,8 +6,8 @@ public class DiceGame {
     private int targetScore = 30;
 
     public DiceGame() {
-        player1 = new DicePlayer();
-        player2 = new DicePlayer();
+        player1 = new PlayerFactory.create();
+        player2 = new PlayerFactory.create();
         player1.setName("Player 1");
         player2.setName("Player 2");
     }
